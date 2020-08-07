@@ -6,6 +6,7 @@ import {
 } from '../../constants/interface'
 import CenteredBlock from '../../components/blocks/CenteredBlock'
 import Header from '../../components/blocks/Header'
+import Links from '../../components/blocks/Links'
 import Footer from '../../components/blocks/Footer'
 
 interface IProfileProps {
@@ -29,6 +30,9 @@ const Profile = ({
       <CenteredBlock>
         {profile && (
           <Header profile={profile} />
+        )}
+        {links && (
+          <Links links={links} />
         )}
         <Footer />
       </CenteredBlock>
