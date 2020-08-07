@@ -1,20 +1,18 @@
 import React, { useState } from 'react'
 
-import { ILinkMusicPlayer } from '../../../constants/interface'
+import { ILinkShow } from '../../../constants/interface'
 import CollapsiblePanel from '../../elements/CollapsiblePanel'
 import Button from '../../elements/Button'
-import MusicList from './MusicList'
-import { IframeWrapper } from './LinkMusicPlayer.style'
+import ShowsList from './ShowsList'
 
-interface ILinkMusicPlayerProps extends ILinkMusicPlayer {
+interface ILinkShowsProps extends ILinkShow {
   text: string;
 }
 
-const LinkMusicPlayer = ({
+const LinkShows = ({
   text,
-  embed,
-  platforms,
-}: ILinkMusicPlayerProps) => {
+  shows,
+}: ILinkShowsProps) => {
   const [isPanelCollapsed, setIsPanelCollapsed] = useState<boolean>(true)
 
   return (
@@ -26,11 +24,10 @@ const LinkMusicPlayer = ({
         aria-hidden={isPanelCollapsed}
         isPanelCollapsed={isPanelCollapsed}
       >
-        <IframeWrapper dangerouslySetInnerHTML={{__html: embed}} />
-        <MusicList platforms={platforms} />
+        <ShowsList shows={shows} />
       </CollapsiblePanel>
     </>
   )
 }
 
-export default LinkMusicPlayer
+export default LinkShows

@@ -4,7 +4,11 @@ import { ILinks } from '../../../constants/interface'
 import { LinkType } from '../../../constants/enums'
 import LinkClassic from '../LinkClassic'
 import LinkMusicPlayer from '../LinkMusicPlayer'
-import { LinksWrapper } from './Links.style'
+import LinkShows from '../LinkShows'
+import {
+  LinksWrapper,
+  LinkWrapper,
+} from './Links.style'
 
 interface ILinksProps {
   links: ILinks[];
@@ -23,26 +27,36 @@ const Links = ({
           text,
           embed,
           platforms,
+          shows,
         } = link
         switch (type) {
           case LinkType.MusicPlayer:
             return (
-              <LinkMusicPlayer
-                key={`${type}-${index}`}
-                text={text}
-                embed={embed}
-                platforms={platforms}
-              />
+              <LinkWrapper key={`${type}-${index}`}>
+                <LinkMusicPlayer
+                  text={text}
+                  embed={embed}
+                  platforms={platforms}
+                />
+              </LinkWrapper>
             )
           case LinkType.Shows:
-            return <span key={`${type}-${index}`}>Shows</span>
+            return (
+              <LinkWrapper key={`${type}-${index}`}>
+                <LinkShows
+                  text={text}
+                  shows={shows}
+                />
+              </LinkWrapper>
+            )
           default:
             return (
-              <LinkClassic
-                key={`${type}-${index}`}
-                text={text}
-                href={href}
-              />
+              <LinkWrapper key={`${type}-${index}`}>
+                <LinkClassic
+                  text={text}
+                  href={href}
+                />
+              </LinkWrapper>
             )
         }
       })

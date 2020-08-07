@@ -12,7 +12,7 @@
       {
         "type": "musicPlayer",
         "text": "Music",
-        "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"300\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+        "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"100%\" height=\"80px\" frameborder=\"0\" allowfullscreen allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
         "platforms": [
           {
             "name": "Spotify",
@@ -20,27 +20,27 @@
           },
           {
             "name": "Apple Music",
-            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            "href": "https://music.apple.com/gb/album/les-copains-dabord/1444007582?i=1444007586"
           },
           {
             "name": "Soundcloud",
-            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            "href": "https://soundcloud.com/ddjohn/sets/les-copains-dabord-george"
           },
           {
             "name": "YouTube Music",
-            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            "href": "https://youtu.be/L9oEcWFjF3M"
           },
           {
             "name": "Deezer",
-            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            "href": "https://www.deezer.com/album/238679"
           },
           {
             "name": "Tidal",
-            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            "href": "https://tidal.com/browse/album/9021017"
           },
           {
             "name": "Bandcamp",
-            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            "href": "https://bandcamp.com/tag/ambient"
           }
         ]
       },
@@ -68,6 +68,16 @@
             "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
           }
         ]
+      },
+      {
+        "type": "classic",
+        "text": "24H",
+        "href": "https://www.google.com/"
+      },
+      {
+        "type": "classic",
+        "text": "36H",
+        "href": "https://www.google.com/"
       }
     ]
   }
