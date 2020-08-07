@@ -4,7 +4,7 @@ import {
   FooterWrapper,
   Image
 } from './Footer.style'
-import Logo from '../../../images/logo@2x.png'
+import Logo from '../../../images/linktree@2x.png'
 
 const Footer = () => {
   return (

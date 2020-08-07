@@ -8,13 +8,9 @@ const theme = {
   },
   colours: {
     white: '#FFFFFF',
-    zircon: '#F4F7FF',
-    santasGray: '#9FA2AE',
-    manatee: '#939BA8',
-    vistaBlue: '#93DBB9',
-    cornflowerBlue: '#6195ED',
-    blueRibbon: '#2066FD',
     mineShaft: '#222222',
+    shamrock: '#39E09B',
+    fiord: '#455A64',
   },
   font: {
     primary: 'Raleway, sans-serif',
