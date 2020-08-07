@@ -1,15 +1,15 @@
 import React from 'react'
 
 import { ILinkClassic } from '../../../constants/interface'
-import { Link } from './LinkClassic.style'
+import Link from '../../elements/Link'
 
 interface ILinkClassicProps extends ILinkClassic {
   text: string;
 }
 
 const LinkClassic = ({
-  href,
   text,
+  href,
 }: ILinkClassicProps) => {
   return (
     <Link

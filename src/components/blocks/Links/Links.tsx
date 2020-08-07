@@ -3,6 +3,7 @@ import React from 'react'
 import { ILinks } from '../../../constants/interface'
 import { LinkType } from '../../../constants/enums'
 import LinkClassic from '../LinkClassic'
+import LinkMusicPlayer from '../LinkMusicPlayer'
 import { LinksWrapper } from './Links.style'
 
 interface ILinksProps {
@@ -15,22 +16,32 @@ const Links = ({
   return (
     <LinksWrapper>
     {
-      links.map(link => {
+      links.map((link, index) => {
         const {
           type,
           href,
           text,
+          embed,
+          platforms,
         } = link
         switch (type) {
           case LinkType.MusicPlayer:
-            return <span>Music player</span>
+            return (
+              <LinkMusicPlayer
+                key={`${type}-${index}`}
+                text={text}
+                embed={embed}
+                platforms={platforms}
+              />
+            )
           case LinkType.Shows:
-            return <span>Shows</span>
+            return <span key={`${type}-${index}`}>Shows</span>
           default:
             return (
               <LinkClassic
-                href={href}
+                key={`${type}-${index}`}
                 text={text}
+                href={href}
               />
             )
         }

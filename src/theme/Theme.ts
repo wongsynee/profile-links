@@ -14,6 +14,9 @@ const theme = {
   },
   fontSize: {
     default: 1.6,
+    sm: '1.4rem',
+    md: '1.6rem',
+    lg: '1.8rem',
   },
   fontWeight: {
     regular: '400',

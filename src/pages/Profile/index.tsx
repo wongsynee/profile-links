@@ -4,7 +4,7 @@ import {
   IProfile,
   ILinks,
 } from '../../constants/interface'
-import CenteredBlock from '../../components/blocks/CenteredBlock'
+import CenteredBlock from '../../components/elements/CenteredBlock'
 import Header from '../../components/blocks/Header'
 import Links from '../../components/blocks/Links'
 import Footer from '../../components/blocks/Footer'

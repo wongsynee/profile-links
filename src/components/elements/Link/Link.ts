@@ -10,6 +10,7 @@ export const Link = styled.a`
   text-decoration: none;
   text-align: center;
   color: ${theme.colours.fiord};
+  font-size: ${theme.fontSize.lg};
   transition:
     background-color
     ${theme.transition.speed.default}
@@ -20,3 +21,5 @@ export const Link = styled.a`
     color: ${theme.colours.shamrock};
   }
 `
+
+export default Link
