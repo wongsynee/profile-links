@@ -1,16 +1,16 @@
 import React from 'react'
 
+import { IProfile } from '../../../constants/interface'
 import ProfilePhoto from '../../../images/profile.jpg'
 import {
   HeaderWrapper,
   ImageCircleWrapper,
   Image,
+  Name,
 } from './Header.style'
 
 interface IHeaderProps {
-  profile: {
-    name: string;
-  };
+  profile: IProfile;
 }
 
 const Header = ({
@@ -19,8 +19,14 @@ const Header = ({
   return (
     <HeaderWrapper>
       <ImageCircleWrapper>
-        <Image src={ProfilePhoto} alt={`${name}'s profile photo`} />
+        <Image
+          src={ProfilePhoto}
+          alt={`${name}'s profile photo`}
+        />
       </ImageCircleWrapper>
+      <Name>
+        @{name}
+      </Name>
     </HeaderWrapper>
   )
 }

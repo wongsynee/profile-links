@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 import { theme } from '../../../theme/Theme'
 
-const imageSize = '12rem'
+const imageSize = '10rem'
 
 export const HeaderWrapper = styled.header`
   background: ${theme.colours.white};
-  padding: 3rem 3vw;
+  padding: 3rem 0;
 `
 
 export const ImageCircleWrapper = styled.div`
@@ -19,4 +19,9 @@ export const ImageCircleWrapper = styled.div`
 
 export const Image = styled.img`
   max-width: ${imageSize};
+`
+
+export const Name = styled.div`
+  text-align: center;
+  padding: 1.5rem 0;
 `

@@ -2,14 +2,17 @@ import produce from 'immer'
 import { createSelector } from 'reselect'
 
 import { IAction } from '../utils/redux'
-import { Interval } from '../constants/enums'
-import { IData } from '../constants/interface'
+import {
+  IData,
+  IProfile,
+  ILinks,
+} from '../constants/interface'
 import { SET_DATA } from '../actions'
 
-// ## NOTE: Update types here.
 export interface IProfileState {
   data?: IData;
-  profile?: any;
+  profile?: IProfile;
+  links?: ILinks[];
 }
 
 const initialState: IProfileState = {
@@ -17,7 +20,10 @@ const initialState: IProfileState = {
   profile: undefined,
 }
 
-const reducer = (state = initialState, action: IAction<any>) => {
+const reducer = (
+  state = initialState,
+  action: IAction<any>,
+) => {
   return (
     produce(state, draft => {
       switch (action.type) {
@@ -41,9 +47,15 @@ const profileState  = createSelector(
   data => data && data.profile,
 )
 
+const linksState  = createSelector(
+  [dataSelector],
+  data => data && data.links,
+)
+
 const selectors = {
   data: dataState,
   profile: profileState,
+  links: linksState,
 }
 
 export { reducer, selectors }

@@ -8,41 +8,45 @@
         "classic": {
           "text": "48H",
           "href": "https://www.google.com/"
-        },
+        }
+      },
+      {
         "musicPlayer": {
           "text": "Music",
           "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"300\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
           "platforms": [
             {
-              "type": "Spotify",
+              "name": "Spotify",
               "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
             },
             {
-              "type": "Apple Music",
+              "name": "Apple Music",
               "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
             },
             {
-              "type": "Soundcloud",
+              "name": "Soundcloud",
               "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
             },
             {
-              "type": "YouTube Music",
+              "name": "YouTube Music",
               "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
             },
             {
-              "type": "Deezer",
+              "name": "Deezer",
               "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
             },
             {
-              "type": "Tidal",
+              "name": "Tidal",
               "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
             },
             {
-              "type": "Bandcamp",
+              "name": "Bandcamp",
               "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
             }
           ]
-        },
+        }
+      },
+      {
         "shows": {
           "text": "Shows",
           "shows": [

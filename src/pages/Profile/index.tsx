@@ -1,21 +1,25 @@
 import React, { useEffect } from 'react'
 
-import { Interval } from '../../constants/enums'
-import { IData } from '../../constants/interface'
+import {
+  IProfile,
+  ILinks,
+} from '../../constants/interface'
 import CenteredBlock from '../../components/blocks/CenteredBlock'
 import Header from '../../components/blocks/Header'
+import Footer from '../../components/blocks/Footer'
 
-// ## NOTE: Update types here.
 interface IProfileProps {
-  profile?: any;
+  profile?: IProfile;
+  links?: ILinks[];
   getData(): void;
 }
 
 const Profile = ({
   profile,
+  links,
   getData,
 }: IProfileProps) => {
-  // Get data from the `/data` endpoint on mount.
+  // Get data from the `/data` endpoint.
   useEffect(() => {
     getData()
   }, [getData])
@@ -26,6 +30,7 @@ const Profile = ({
         {profile && (
           <Header profile={profile} />
         )}
+        <Footer />
       </CenteredBlock>
     </>
   )

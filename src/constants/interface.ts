@@ -1,5 +1,3 @@
-import { LinkType } from './enums'
-
 export interface IAction<P> {
   type: string;
   payload: P;
@@ -9,14 +7,36 @@ export interface IProfile {
   name: string;
 }
 
-export interface ILink {
-  [key in LinkType]: {
-
-  }
+interface ILinkClassic {
+  text: string;
+  href: string;
 }
 
-// ## NOTE: Update types here.
+interface ILinkMusicPlayer {
+  text: string;
+  embed: string;
+  platforms: {
+    name: string;
+    href: string;
+  }[];
+}
+
+interface ILinkShow {
+  text: string;
+  shows: {
+    date: string;
+    venue: string;
+    href?: string;
+  }[];
+}
+
+export interface ILinks {
+  classic: ILinkClassic;
+  musicPlayer: ILinkMusicPlayer;
+  shows: ILinkShow;
+}
+
 export interface IData {
   profile?: IProfile;
-  links?: any;
+  links?: ILinks[];
 }
