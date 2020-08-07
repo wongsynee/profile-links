@@ -9,11 +9,11 @@ export interface IProfile {
   name: string;
 }
 
-interface ILinkClassic {
+export interface ILinkClassic {
   href: string;
 }
 
-interface ILinkMusicPlayer {
+export interface ILinkMusicPlayer {
   embed: string;
   platforms: {
     name: string;
@@ -21,7 +21,7 @@ interface ILinkMusicPlayer {
   }[];
 }
 
-interface ILinkShow {
+export interface ILinkShow {
   shows: {
     date: string;
     venue: string;

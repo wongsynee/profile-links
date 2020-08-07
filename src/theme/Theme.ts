@@ -3,9 +3,6 @@ const theme = {
     default: '.5rem',
     circle: '50%',
   },
-  boxShadow: {
-    default: '.5rem .5rem 1rem rgba(147,155,168,0.15)',
-  },
   colours: {
     white: '#FFFFFF',
     mineShaft: '#222222',
@@ -24,6 +21,11 @@ const theme = {
   },
   spacer: {
     maxWidth: '70rem',
+  },
+  transition: {
+    speed: {
+      default: '300ms',
+    },
   },
 }
 
