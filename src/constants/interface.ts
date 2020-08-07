@@ -1,3 +1,5 @@
+import { LinkType } from './enums'
+
 export interface IAction<P> {
   type: string;
   payload: P;
@@ -8,12 +10,10 @@ export interface IProfile {
 }
 
 interface ILinkClassic {
-  text: string;
   href: string;
 }
 
 interface ILinkMusicPlayer {
-  text: string;
   embed: string;
   platforms: {
     name: string;
@@ -22,7 +22,6 @@ interface ILinkMusicPlayer {
 }
 
 interface ILinkShow {
-  text: string;
   shows: {
     date: string;
     venue: string;
@@ -30,10 +29,9 @@ interface ILinkShow {
   }[];
 }
 
-export interface ILinks {
-  classic: ILinkClassic;
-  musicPlayer: ILinkMusicPlayer;
-  shows: ILinkShow;
+export interface ILinks extends ILinkClassic, ILinkMusicPlayer, ILinkShow {
+  type: LinkType;
+  text: string;
 }
 
 export interface IData {

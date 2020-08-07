@@ -5,72 +5,69 @@
     },
     "links": [
       {
-        "classic": {
-          "text": "48H",
-          "href": "https://www.google.com/"
-        }
+        "type": "classic",
+        "text": "48H",
+        "href": "https://www.google.com/"
       },
       {
-        "musicPlayer": {
-          "text": "Music",
-          "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"300\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
-          "platforms": [
-            {
-              "name": "Spotify",
-              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
-            },
-            {
-              "name": "Apple Music",
-              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
-            },
-            {
-              "name": "Soundcloud",
-              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
-            },
-            {
-              "name": "YouTube Music",
-              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
-            },
-            {
-              "name": "Deezer",
-              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
-            },
-            {
-              "name": "Tidal",
-              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
-            },
-            {
-              "name": "Bandcamp",
-              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
-            }
-          ]
-        }
+        "type": "musicPlayer",
+        "text": "Music",
+        "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"300\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+        "platforms": [
+          {
+            "name": "Spotify",
+            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+          },
+          {
+            "name": "Apple Music",
+            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+          },
+          {
+            "name": "Soundcloud",
+            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+          },
+          {
+            "name": "YouTube Music",
+            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+          },
+          {
+            "name": "Deezer",
+            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+          },
+          {
+            "name": "Tidal",
+            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+          },
+          {
+            "name": "Bandcamp",
+            "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+          }
+        ]
       },
       {
-        "shows": {
-          "text": "Shows",
-          "shows": [
-            {
-              "date": "01-04-2019",
-              "venue": "The Forum, Melbourne",
-              "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
-            },
-            {
-              "date": "02-04-2019",
-              "venue": "Venue Name, Canberra"
-            },
-            {
-              "date": "03-04-2019",
-              "venue": "Venue Name, Sydney",
-              "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
-            },
-            {
-              "date": "04-04-2019",
-              "venue": "Venue Name, Brisbane",
-              "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
-            }
-          ]
-        }
+        "type": "shows",
+        "text": "Shows",
+        "shows": [
+          {
+            "date": "01-04-2019",
+            "venue": "The Forum, Melbourne",
+            "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+          },
+          {
+            "date": "02-04-2019",
+            "venue": "Venue Name, Canberra"
+          },
+          {
+            "date": "03-04-2019",
+            "venue": "Venue Name, Sydney",
+            "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+          },
+          {
+            "date": "04-04-2019",
+            "venue": "Venue Name, Brisbane",
+            "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+          }
+        ]
       }
     ]
   }
