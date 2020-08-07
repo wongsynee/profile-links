@@ -1,0 +1,73 @@
+{
+  "data": {
+    "profile": {
+      "name": "wongsynee"
+    },
+    "links": [
+      {
+        "classic": {
+          "text": "48H",
+          "href": "https://www.google.com/"
+        },
+        "musicPlayer": {
+          "text": "Music",
+          "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"300\" height=\"80\" frameborder=\"0\" allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
+          "platforms": [
+            {
+              "type": "Spotify",
+              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            },
+            {
+              "type": "Apple Music",
+              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            },
+            {
+              "type": "Soundcloud",
+              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            },
+            {
+              "type": "YouTube Music",
+              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            },
+            {
+              "type": "Deezer",
+              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            },
+            {
+              "type": "Tidal",
+              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            },
+            {
+              "type": "Bandcamp",
+              "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
+            }
+          ]
+        },
+        "shows": {
+          "text": "Shows",
+          "shows": [
+            {
+              "date": "01-04-2019",
+              "venue": "The Forum, Melbourne",
+              "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+            },
+            {
+              "date": "02-04-2019",
+              "venue": "Venue Name, Canberra"
+            },
+            {
+              "date": "03-04-2019",
+              "venue": "Venue Name, Sydney",
+              "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+            },
+            {
+              "date": "04-04-2019",
+              "venue": "Venue Name, Brisbane",
+              "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
