@@ -2,7 +2,6 @@
 A profile with links, built on React with the base of [Create React App](https://github.com/facebook/create-react-app).
 
 ## Getting Started
-
 After cloning the repo, set the project up with the following commands.
 
 Install dependencies:
@@ -11,15 +10,9 @@ yarn
 ```
 
 Run project (Should run by default on: http://localhost:3005/):
-```sh
-yarn start
-```
-
 Run mock APIs (Should run by default on: http://localhost:3000/):
-
-This needs to be run in a separate terminal, as the application displays data from the API.
 ```sh
-yarn start-json
+yarn start-stack
 ```
 
 Run tests:
