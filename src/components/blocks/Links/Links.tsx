@@ -25,7 +25,6 @@ const Links = ({
           type,
           href,
           text,
-          embed,
           platforms,
           shows,
         } = link
@@ -35,7 +34,6 @@ const Links = ({
               <LinkWrapper key={`${type}-${index}`}>
                 <LinkMusicPlayer
                   text={text}
-                  embed={embed}
                   platforms={platforms}
                 />
               </LinkWrapper>

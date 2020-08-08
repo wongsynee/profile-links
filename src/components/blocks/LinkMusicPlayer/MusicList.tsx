@@ -1,13 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 import List from '../../elements/List'
 import Chevron from '../../elements/Chevron'
 import MusicPlayerIcons from './MusicPlayerIcons'
-import { PlatformLink } from './LinkMusicPlayer.style'
+import {
+  IframeWrapper,
+  Button,
+} from './LinkMusicPlayer.style'
 
 interface IMusicListProps {
   platforms: {
     name: string;
+    embed: string;
     href: string;
   }[];
 }
@@ -15,23 +19,32 @@ interface IMusicListProps {
 const MusicList = ({
   platforms,
 }: IMusicListProps) => {
+  const [embedFrame, setEmbedFrame] = useState<string>('')
+
   return (
-    <List>
-      {
-        platforms.map((platform, index) => {
-          const { name, href } = platform
-          return (
-            <li key={`${name}-${index}`}>
-              <PlatformLink href={href} target="_blank">
-                <MusicPlayerIcons name={name} />
-                {name}
-                <Chevron />
-              </PlatformLink>
-            </li>
-          )
-        })
-      }
-    </List>
+    <>
+      {embedFrame && (
+        <IframeWrapper dangerouslySetInnerHTML={{__html: embedFrame}} />
+      )}
+      <List>
+        {
+          platforms.map((platform, index) => {
+            const { name, embed, href } = platform
+            return (
+              <li key={`${name}-${index}`}>
+                <a href={href} target="_blank" rel="noopener noreferrer">
+                  <MusicPlayerIcons name={name} />
+                </a>
+                <Button onClick={() => setEmbedFrame(embed)}>
+                  {name}
+                  <Chevron />
+                </Button>
+              </li>
+            )
+          })
+        }
+      </List>
+    </>
   )
 }
 

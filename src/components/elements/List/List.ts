@@ -9,6 +9,8 @@ export const List = styled.ul`
     border-bottom: .1rem solid ${({theme}) => theme.colours.iron};
     font-size: ${({theme}) => theme.fontSize.sm};
     font-weight: ${({theme}) => theme.fontWeight.bold};
+    display: flex;
+    align-items: center;
 
     &:last-child {
       border-bottom: none;

@@ -32,7 +32,7 @@ const Profile = ({
 
   /*
     Static theme is the default, when data on the
-    colours returns from the API, the colours are
+    theme colours return from the API, the colours are
     then combined to be passed to the ThemeProvider.
   */
   const combinedTheme = {

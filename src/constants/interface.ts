@@ -14,9 +14,9 @@ export interface ILinkClassic {
 }
 
 export interface ILinkMusicPlayer {
-  embed: string;
   platforms: {
     name: string;
+    embed: string;
     href: string;
   }[];
 }

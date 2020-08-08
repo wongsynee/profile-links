@@ -4,14 +4,17 @@ export const IframeWrapper = styled.div`
   margin-bottom: 1.5rem;
 `
 
-export const PlatformLink = styled.a`
+export const Button = styled.button`
   display: block;
-  text-decoration: none;
   color: ${({theme}) => theme.colours.secondary};
   padding: 1.5rem 2rem 1.5rem 0;
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 
   > :last-child {
     position: absolute;

@@ -7,6 +7,7 @@ const itemInList = css`
   position: relative;
   display: flex;
   align-items: center;
+  width: 100%;
 
   > :last-child {
     position: absolute;

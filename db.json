@@ -18,34 +18,40 @@
       {
         "type": "musicPlayer",
         "text": "Music",
-        "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"100%\" height=\"80px\" frameborder=\"0\" allowfullscreen allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
         "platforms": [
           {
             "name": "Spotify",
+            "embed": "<iframe src=\"https://open.spotify.com/embed/track/2tsW3Lr6LatRZz7Bbe3CBK\" width=\"100%\" height=\"80px\" frameborder=\"0\" allowfullscreen allowtransparency=\"true\" allow=\"encrypted-media\"></iframe>",
             "href": "https://open.spotify.com/track/2tsW3Lr6LatRZz7Bbe3CBK?si=iFJIbg17RZeKJN5YVp-4Kw"
           },
           {
             "name": "Apple Music",
+            "embed": "<iframe allow=\"autoplay *; encrypted-media *;\" frameborder=\"0\" height=\"450\" style=\"width:100%;max-width:660px;overflow:hidden;background:transparent;\" sandbox=\"allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation\" src=\"https://embed.music.apple.com/gb/album/les-copains-dabord/1444007582\"></iframe>",
             "href": "https://music.apple.com/gb/album/les-copains-dabord/1444007582?i=1444007586"
           },
           {
             "name": "Soundcloud",
+            "embed": "<iframe width=\"100%\" height=\"300\" scrolling=\"no\" frameborder=\"no\" allow=\"autoplay\" src=\"https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/playlists/103451061&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true\"></iframe>",
             "href": "https://soundcloud.com/ddjohn/sets/les-copains-dabord-george"
           },
           {
             "name": "YouTube Music",
+            "embed": "<iframe width=\"100%\" height=\"315\" src=\"https://www.youtube.com/embed/L9oEcWFjF3M?controls=0\" frameborder=\"0\" allow=\"accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
             "href": "https://youtu.be/L9oEcWFjF3M"
           },
           {
             "name": "Deezer",
+            "embed": "<iframe width=\"100%\" height=\"92px\" scrolling=\"no\" frameborder=\"0\" allowTransparency=\"true\" src=\"https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=false&color=007FEB&layout=dark&size=medium&type=album&id=238679&app_id=1\" width=\"600\" height=\"350\"></iframe>",
             "href": "https://www.deezer.com/album/238679"
           },
           {
             "name": "Tidal",
+            "embed": "<div style=\"position: relative; padding-bottom: 100%; height: 0; overflow: hidden; max-width: 100%;\"><iframe src=\"https://embed.tidal.com/tracks/9021018?layout=gridify\" frameborder=\"0\" allowfullscreen style=\"position: absolute; top: 0; left: 0; width: 100%; height: 1px; min-height: 100%; margin: 0 auto;\"></iframe></div>",
             "href": "https://tidal.com/browse/album/9021017"
           },
           {
             "name": "Bandcamp",
+            "embed": "<iframe style=\"border: 0; width: 100%; height: 42px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1521988680/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/\" seamless><a href=\"http://noveller.bandcamp.com/album/arrow\">Arrow by Noveller</a></iframe>",
             "href": "https://bandcamp.com/tag/ambient"
           }
         ]

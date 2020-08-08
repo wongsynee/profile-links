@@ -4,7 +4,6 @@ import { ILinkMusicPlayer } from '../../../constants/interface'
 import CollapsiblePanel from '../../elements/CollapsiblePanel'
 import Button from '../../elements/Button'
 import MusicList from './MusicList'
-import { IframeWrapper } from './LinkMusicPlayer.style'
 
 interface ILinkMusicPlayerProps extends ILinkMusicPlayer {
   text: string;
@@ -12,7 +11,6 @@ interface ILinkMusicPlayerProps extends ILinkMusicPlayer {
 
 const LinkMusicPlayer = ({
   text,
-  embed,
   platforms,
 }: ILinkMusicPlayerProps) => {
   const [isPanelCollapsed, setIsPanelCollapsed] = useState<boolean>(true)
@@ -26,7 +24,6 @@ const LinkMusicPlayer = ({
         aria-hidden={isPanelCollapsed}
         isPanelCollapsed={isPanelCollapsed}
       >
-        <IframeWrapper dangerouslySetInnerHTML={{__html: embed}} />
         <MusicList platforms={platforms} />
       </CollapsiblePanel>
     </>
