@@ -20,7 +20,7 @@ Run tests:
 yarn test
 ```
 
-### TODO
+### TODO List
 * Add unit tests for components
 * Add error handling for API failures
 
