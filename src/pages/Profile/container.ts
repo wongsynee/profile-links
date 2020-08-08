@@ -11,6 +11,7 @@ import Profile from '.'
 const mapStateToProps = (state: IProfileState) => (
   {
     profile: selectors.profile(state),
+    theme: selectors.theme(state),
     links: selectors.links(state),
   }
 )

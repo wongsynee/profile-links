@@ -5,6 +5,7 @@ import { IAction } from '../utils/redux'
 import {
   IData,
   IProfile,
+  ITheme,
   ILinks,
 } from '../constants/interface'
 import { SET_DATA } from '../actions'
@@ -12,12 +13,15 @@ import { SET_DATA } from '../actions'
 export interface IProfileState {
   data?: IData;
   profile?: IProfile;
+  theme?: ITheme;
   links?: ILinks[];
 }
 
 const initialState: IProfileState = {
   data: undefined,
   profile: undefined,
+  theme: undefined,
+  links: undefined,
 }
 
 const reducer = (
@@ -47,6 +51,11 @@ const profileState  = createSelector(
   data => data && data.profile,
 )
 
+const themeState  = createSelector(
+  [dataSelector],
+  data => data && data.theme,
+)
+
 const linksState  = createSelector(
   [dataSelector],
   data => data && data.links,
@@ -55,6 +64,7 @@ const linksState  = createSelector(
 const selectors = {
   data: dataState,
   profile: profileState,
+  theme: themeState,
   links: linksState,
 }
 

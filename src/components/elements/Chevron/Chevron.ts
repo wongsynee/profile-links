@@ -4,7 +4,7 @@ export const Chevron = styled.span`
   &::before {
     content: '';
     border-style: solid;
-    border-color: ${({theme}) => theme.colours.fiord};
+    border-color: ${({theme}) => theme.colours.secondary};
     border-width: .2rem .2rem 0 0;
     display: inline-block;
     height: .7rem;

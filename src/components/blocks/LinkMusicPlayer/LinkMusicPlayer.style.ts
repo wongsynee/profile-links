@@ -7,7 +7,7 @@ export const IframeWrapper = styled.div`
 export const PlatformLink = styled.a`
   display: block;
   text-decoration: none;
-  color: ${({theme}) => theme.colours.fiord};
+  color: ${({theme}) => theme.colours.secondary};
   padding: 1.5rem 2rem 1.5rem 0;
   position: relative;
   display: flex;

@@ -3,6 +3,12 @@
     "profile": {
       "name": "wongsynee"
     },
+    "theme": {
+      "colours": {
+        "primary": "#39E09B",
+        "secondary": "#455A64"
+      }
+    },
     "links": [
       {
         "type": "classic",

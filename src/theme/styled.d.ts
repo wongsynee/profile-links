@@ -11,8 +11,8 @@ declare module 'styled-components' {
       porcelain: string;
       iron: string;
       mineShaft: string;
-      fiord: string;
-      shamrock: string;
+      primary: string;
+      secondary: string;
     };
     font: {
       primary: string;

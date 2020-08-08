@@ -34,7 +34,15 @@ export interface ILinks extends ILinkClassic, ILinkMusicPlayer, ILinkShow {
   text: string;
 }
 
+export interface ITheme {
+  colours: {
+    primary: string;
+    secondary: string;
+  };
+}
+
 export interface IData {
   profile?: IProfile;
+  theme?: ITheme;
   links?: ILinks[];
 }

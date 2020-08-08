@@ -10,8 +10,8 @@ const theme: DefaultTheme = {
     porcelain: '#F5F7F8',
     iron: '#DADEE0',
     mineShaft: '#222222',
-    fiord: '#455A64',
-    shamrock: '#39E09B',
+    primary: '#39E09B',
+    secondary: '#455A64',
   },
   font: {
     primary: 'Raleway, sans-serif',
