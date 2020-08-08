@@ -52,7 +52,7 @@
           {
             "name": "Bandcamp",
             "embed": "<iframe style=\"border: 0; width: 100%; height: 42px;\" src=\"https://bandcamp.com/EmbeddedPlayer/album=1521988680/size=small/bgcol=333333/linkcol=2ebd35/transparent=true/\" seamless><a href=\"http://noveller.bandcamp.com/album/arrow\">Arrow by Noveller</a></iframe>",
-            "href": "https://bandcamp.com/tag/ambient"
+            "href": "https://noveller.bandcamp.com/album/arrow"
           }
         ]
       },
@@ -72,12 +72,12 @@
           {
             "date": "03-04-2019",
             "venue": "Venue Name, Sydney",
-            "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+            "href": "https://www.songkick.com/concerts/39590797-between-you-and-me-at-northcote-social-club"
           },
           {
             "date": "04-04-2019",
             "venue": "Venue Name, Brisbane",
-            "href": "https://www.songkick.com/concerts/39272978-les-mckeown-at-chelsea-heights-hotel"
+            "href": "https://www.songkick.com/concerts/39471910-milk-carton-kids-at-melbourne-recital-centre"
           }
         ]
       },
