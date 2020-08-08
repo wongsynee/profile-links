@@ -1,28 +1,19 @@
-import { Interval } from '../constants/enums'
+// import { Interval } from '../constants/enums'
+import { setData } from '../actions'
+import { LinkType } from '../constants/enums'
 import {
-  setData,
-  setSelectedInterval,
-} from '../actions'
-import {
-  IPlanPickerState,
   reducer,
   selectors,
 } from '.'
 
-const requiredInitialState = {
-  selectedInterval: Interval.Weekly,
-}
-
 describe('Reducer', () => {
   it('should dispatch to set data', () => {
-    const mockData = [
-      {
-        interval: Interval.Weekly,
-        paymentCount: 2,
-      },
-    ]
+    const mockData = {
+      profile: undefined,
+      theme: undefined,
+      links: undefined,
+    }
     const mockInitialState = {
-      ...requiredInitialState,
       data: undefined,
     }
 
@@ -32,155 +23,85 @@ describe('Reducer', () => {
         data: mockData,
       })
   })
-
-  it('should dispatch to set selected interval', () => {
-    const mockInitialState = {
-      ...requiredInitialState,
-    }
-
-    expect(reducer(mockInitialState, setSelectedInterval(Interval.Monthly)))
-      .toEqual({
-        ...mockInitialState,
-        selectedInterval: Interval.Monthly,
-      })
-  })
 })
 
-describe('data Selector', () => {
-  it('should expect data', () => {
-    const mockData = [
-      {
-        interval: Interval.Weekly,
-        paymentCount: 2,
+describe('Selector: data', () => {
+  it('should receive data', () => {
+    const mockData = {
+      profile: {
+        name: 'mock-name',
       },
-    ]
+      theme: undefined,
+      links: undefined,
+    }
     const mockInitialState = {
-      ...requiredInitialState,
       data: mockData,
     }
     const data = selectors.data(mockInitialState)
+
     expect(data).toEqual(mockData)
   })
 })
 
-describe('interval Selector', () => {
-  it('should expect unique intervals', () => {
-    const mockData = [
-      {
-        interval: Interval.Weekly,
-        paymentCount: 2,
+describe('Selector: profile', () => {
+  it('should receive profile', () => {
+    const mockData = {
+      profile: {
+        name: 'mock-name',
       },
-      {
-        interval: Interval.Fortnightly,
-        paymentCount: 2,
-      },
-      {
-        interval: Interval.Monthly,
-        paymentCount: 2,
-      },
-    ]
+      theme: undefined,
+      links: undefined,
+    }
     const mockInitialState = {
-      ...requiredInitialState,
       data: mockData,
     }
-    const interval = selectors.interval(mockInitialState)
-    expect(interval).toEqual([
-      Interval.Weekly,
-      Interval.Fortnightly,
-      Interval.Monthly,
-    ])
+    const profile = selectors.profile(mockInitialState)
+
+    expect(profile).toEqual(mockData.profile)
   })
 })
 
-describe('paymentByWeekly Selector', () => {
-  it('should expected payments by weekly', () => {
-    const mockData = [
-      {
-        interval: Interval.Weekly,
-        paymentCount: 2,
+describe('Selector: theme', () => {
+  it('should receive theme', () => {
+    const mockData = {
+      profile: undefined,
+      theme: {
+        colours: {
+          primary: '#39E09B',
+          secondary: '#455A64',
+        },
       },
-      {
-        interval: Interval.Weekly,
-        paymentCount: 4,
-      },
-      {
-        interval: Interval.Monthly,
-        paymentCount: 5,
-      },
-    ]
+      links: undefined,
+    }
     const mockInitialState = {
-      ...requiredInitialState,
       data: mockData,
     }
-    const paymentByWeekly = selectors.paymentByWeekly(mockInitialState)
-    expect(paymentByWeekly).toEqual([
-      2,
-      4,
-    ])
+    const theme = selectors.theme(mockInitialState)
+
+    expect(theme).toEqual(mockData.theme)
   })
 })
 
-describe('paymentByFortnightly Selector', () => {
-  it('should expected payments by fortnightly', () => {
-    const mockData = [
-      {
-        interval: Interval.Weekly,
-        paymentCount: 2,
-      },
-      {
-        interval: Interval.Weekly,
-        paymentCount: 4,
-      },
-      {
-        interval: Interval.Fortnightly,
-        paymentCount: 5,
-      },
-    ]
+describe('Selector: links', () => {
+  it('should receive theme', () => {
+    const mockData = {
+      profile: undefined,
+      theme: undefined,
+      links: [
+        {
+          type: LinkType.Classic,
+          text: 'mock-text',
+          href: 'mock-link',
+          platforms: [],
+          shows: [],
+        },
+      ],
+    }
     const mockInitialState = {
-      ...requiredInitialState,
       data: mockData,
     }
-    const paymentByFortnightly = selectors.paymentByFortnightly(mockInitialState)
-    expect(paymentByFortnightly).toEqual([
-      5,
-    ])
-  })
-})
+    const links = selectors.links(mockInitialState)
 
-describe('paymentByMonthly Selector', () => {
-  it('should expected payments by monthly', () => {
-    const mockData = [
-      {
-        interval: Interval.Weekly,
-        paymentCount: 2,
-      },
-      {
-        interval: Interval.Monthly,
-        paymentCount: 4,
-      },
-      {
-        interval: Interval.Fortnightly,
-        paymentCount: 5,
-      },
-    ]
-    const mockInitialState = {
-      ...requiredInitialState,
-      data: mockData,
-    }
-    const paymentByMonthly = selectors.paymentByMonthly(mockInitialState)
-    expect(paymentByMonthly).toEqual([
-      4,
-    ])
-  })
-})
-
-describe('selectedInterval Selector', () => {
-  it('should expected selected interval', () => {
-    const mockInitialState = {
-      ...requiredInitialState,
-      selectedInterval: Interval.Monthly,
-    }
-    const selectedInterval = selectors.selectedInterval(mockInitialState)
-    expect(selectedInterval).toEqual(Interval.Monthly)
+    expect(links).toEqual(mockData.links)
   })
 })
