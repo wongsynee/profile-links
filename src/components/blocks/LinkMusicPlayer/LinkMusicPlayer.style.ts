@@ -1,7 +1,5 @@
 import styled from 'styled-components'
 
-import { theme } from '../../../theme/Theme'
-
 export const IframeWrapper = styled.div`
   margin-bottom: 1.5rem;
 `
@@ -9,7 +7,7 @@ export const IframeWrapper = styled.div`
 export const PlatformLink = styled.a`
   display: block;
   text-decoration: none;
-  color: ${theme.colours.fiord};
+  color: ${({theme}) => theme.colours.fiord};
   padding: 1.5rem 2rem 1.5rem 0;
   position: relative;
   display: flex;
@@ -20,7 +18,7 @@ export const PlatformLink = styled.a`
     right: 0;
     transition:
       right
-      ${theme.transition.speed.default}
+      ${({theme}) => theme.transition.speed.default}
       ease;
   }
 

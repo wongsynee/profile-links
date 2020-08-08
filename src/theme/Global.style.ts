@@ -1,8 +1,6 @@
 import { createGlobalStyle } from 'styled-components'
 import styledNormalize from 'styled-normalize'
 
-import { theme } from './Theme'
-
 export const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
@@ -18,9 +16,9 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    background-color: ${theme.colours.mineShaft};
-    color: ${theme.colours.fiord};
-    font: normal normal ${theme.fontWeight.regular} ${theme.fontSize.default}/1.2 ${theme.font.primary};
+    background-color: ${({theme}) => theme.colours.mineShaft};
+    color: ${({theme}) => theme.colours.fiord};
+    font: normal normal ${({theme}) => theme.fontWeight.regular} ${({theme}) => theme.fontSize.default}/1.2 ${({theme}) => theme.font.primary};
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
@@ -38,12 +36,12 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   ::selection {
-    background-color: ${theme.colours.fiord};
-    color: ${theme.colours.white};
+    background-color: ${({theme}) => theme.colours.fiord};
+    color: ${({theme}) => theme.colours.white};
   }
 
   ::-moz-selection {
-    background-color: ${theme.colours.fiord};
-    color: ${theme.colours.white};
+    background-color: ${({theme}) => theme.colours.fiord};
+    color: ${({theme}) => theme.colours.white};
   }
 `

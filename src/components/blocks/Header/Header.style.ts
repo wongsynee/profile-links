@@ -1,16 +1,13 @@
 import styled from 'styled-components'
 
-import { theme } from '../../../theme/Theme'
-
 const imageSize = '10rem'
 
 export const HeaderWrapper = styled.header`
-  background: ${theme.colours.white};
   padding: 3rem 0;
 `
 
 export const ImageCircleWrapper = styled.div`
-  border-radius: ${theme.borderRadius.circle};
+  border-radius: ${({theme}) => theme.borderRadius.circle};
   overflow: hidden;
   width: ${imageSize};
   height: ${imageSize};

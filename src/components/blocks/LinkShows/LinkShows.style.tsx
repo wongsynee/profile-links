@@ -1,10 +1,8 @@
 import styled, { css } from 'styled-components'
 
-import { theme } from '../../../theme/Theme'
-
 const itemInList = css`
   display: block;
-  color: ${theme.colours.fiord};
+  color: ${({theme}) => theme.colours.fiord};
   padding: 1.5rem 2rem 1.5rem 0;
   position: relative;
   display: flex;
@@ -15,7 +13,7 @@ const itemInList = css`
     right: 0;
     transition:
       right
-      ${theme.transition.speed.default}
+      ${({theme}) => theme.transition.speed.default}
       ease;
   }
 
@@ -39,15 +37,15 @@ export const TextWrapper = styled.div`
 `
 
 export const Date = styled.div`
-  font-size: ${theme.fontSize.lg};
+  font-size: ${({theme}) => theme.fontSize.lg};
   margin-bottom: 1rem;
 `
 
 export const Venue = styled.div`
-  font-size: ${theme.fontSize.sm};
-  font-weight: ${theme.fontWeight.regular};
+  font-size: ${({theme}) => theme.fontSize.sm};
+  font-weight: ${({theme}) => theme.fontWeight.regular};
 `
 
 export const DisclaimerText = styled.span`
-  font-size: ${theme.fontSize.xs};
+  font-size: ${({theme}) => theme.fontSize.xs};
 `
