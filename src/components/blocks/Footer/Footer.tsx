@@ -2,7 +2,7 @@ import React from 'react'
 
 import {
   FooterWrapper,
-  Image
+  Image,
 } from './Footer.style'
 import Logo from '../../../images/linktree@2x.png'
 

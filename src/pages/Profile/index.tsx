@@ -11,6 +11,7 @@ import CenteredBlock from '../../components/elements/CenteredBlock'
 import Header from '../../components/blocks/Header'
 import Links from '../../components/blocks/Links'
 import Footer from '../../components/blocks/Footer'
+import Loader from '../../components/elements/Loader'
 
 interface IProfileProps {
   profile?: IProfile;
@@ -46,11 +47,13 @@ const Profile = ({
   return (
     <ThemeProvider theme={combinedTheme}>
       <CenteredBlock>
-        {profile && (
-          <Header profile={profile} />
-        )}
-        {links && (
-          <Links links={links} />
+        {profile && links ? (
+          <>
+            <Header profile={profile} />
+            <Links links={links} />
+          </>
+        ) : (
+          <Loader />
         )}
         <Footer />
       </CenteredBlock>

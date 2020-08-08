@@ -3,6 +3,7 @@ import styledNormalize from 'styled-normalize'
 
 import { theme } from './Theme'
 
+// Setting body's font-size to 62.5% for easier rem calculation.
 export const GlobalStyle = createGlobalStyle`
   ${styledNormalize}
 
@@ -14,7 +15,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   html {
-    font-size: 62.5%; // [1]
+    font-size: 62.5%;
   }
 
   body {

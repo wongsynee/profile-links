@@ -3,7 +3,7 @@ import styled from 'styled-components'
 const imageSize = '10rem'
 
 export const HeaderWrapper = styled.header`
-  padding: 3rem 0;
+  padding: 0 0 3rem;
 `
 
 export const ImageCircleWrapper = styled.div`

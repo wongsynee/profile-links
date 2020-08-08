@@ -1,4 +1,3 @@
-// import { Interval } from '../constants/enums'
 import { setData } from '../actions'
 import { LinkType } from '../constants/enums'
 import {

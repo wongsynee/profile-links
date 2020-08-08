@@ -29,7 +29,7 @@ export function * getData() {
       yield put(GET_DATA.failure(payload))
     }
   } catch (error) {
-    // Do something with error.
+    // ## TODO: Do something with the error.
   }
 }
 

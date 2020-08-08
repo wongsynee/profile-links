@@ -5,6 +5,7 @@ const CenteredBlock = styled.div`
   max-width: ${({theme}) => theme.spacer.maxWidth};
   min-height: 100vh;
   margin: 0 auto;
+  padding: 3rem 0 0;
 `
 
 export default CenteredBlock

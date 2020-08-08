@@ -20,6 +20,10 @@ Run tests:
 yarn test
 ```
 
+## TODO
+* Add unit tests for components
+* Add error handling for API failures
+
 ### Using Styled Components
 Styled Components allows for writing CSS in JS, which is very handy for component based built. For further reading here are a list of links:
 * https://www.styled-components.com

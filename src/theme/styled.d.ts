@@ -35,6 +35,8 @@ declare module 'styled-components' {
       speed: {
         default: string;
         fast: string;
+        medium: string;
+        slow: string;
       };
     };
   }

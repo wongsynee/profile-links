@@ -13,6 +13,6 @@ export const fetchData = async() => {
     const data = await response.json()
     return data
   } catch (error) {
-    // Do something with error.
+    // ## TODO: Do something with the error.
   }
 }
