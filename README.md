@@ -9,7 +9,7 @@ Install dependencies:
 yarn
 ```
 
-Run project (Should run by default on: http://localhost:3005/):
+Run project (Should run by default on: http://localhost:3005/): <br />
 Run mock APIs (Should run by default on: http://localhost:3000/):
 ```sh
 yarn start-stack
