@@ -82,7 +82,7 @@ describe('Selector: theme', () => {
 })
 
 describe('Selector: links', () => {
-  it('should receive theme', () => {
+  it('should receive links', () => {
     const mockData = {
       profile: undefined,
       theme: undefined,
